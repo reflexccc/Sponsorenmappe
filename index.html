@@ -39,8 +39,8 @@
   const myButton = document.getElementById("english");
   myButton.addEventListener("click", toEnglish() {
     var imgs = document.getElementById("image");
-    for(img in imgs && ext in english){
-        img.src=ext;
+    english.forEach((ext, index) => {
+      imgs[index].src=ext;
     }
   }
   );
@@ -49,10 +49,9 @@
   const myButton = document.getElementById("german");
   myButton.addEventListener("click", toGerman(){
     var imgs = document.getElementById("image");
-    for (ext in deutsch){
-      for(img in imgs){
-        img.src=ext;
-      }
+    var imgs = document.getElementById("image");
+    deutsch.forEach((ext, index) => {
+      imgs[index].src=ext;
     }
   });
 </script>
