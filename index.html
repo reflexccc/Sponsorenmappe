@@ -39,16 +39,12 @@
   const myButton = document.getElementById("english");
   myButton.addEventListener("click", toEnglish() {
     var imgs = document.getElementById("image");
-    for (ext in english){
-      for(img in imgs){
+    for(img in imgs && ext in english){
         img.src=ext;
-      }
     }
   }
   );
-</script>
-
-<script>
+  
   const deutsch = ["https://github.com/reflexccc/Sponsorenmappe/blob/1356860feaebd26e04e06c628e5064715267e6fc/deutsch_0.jpg", "https://github.com/reflexccc/Sponsorenmappe/blob/1356860feaebd26e04e06c628e5064715267e6fc/deutsch_1.jpg", "https://github.com/reflexccc/Sponsorenmappe/blob/1356860feaebd26e04e06c628e5064715267e6fc/deutsch_2.jpg", "https://github.com/reflexccc/Sponsorenmappe/blob/1356860feaebd26e04e06c628e5064715267e6fc/deutsch_3.jpg", "https://github.com/reflexccc/Sponsorenmappe/blob/1356860feaebd26e04e06c628e5064715267e6fc/deutsch_4.jpg", "https://github.com/reflexccc/Sponsorenmappe/blob/1356860feaebd26e04e06c628e5064715267e6fc/deutsch_5.jpg", "https://github.com/reflexccc/Sponsorenmappe/blob/1356860feaebd26e04e06c628e5064715267e6fc/deutsch_6.jpg"];
   const myButton = document.getElementById("german");
   myButton.addEventListener("click", toGerman(){
