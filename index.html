@@ -10,15 +10,40 @@
   </nav>
 
   <div  class="w3-container w3-white">
-    <img src="english.pdf" style="width:100%" id="image">  
+    <img src="english_0.jpg" style="width:100%" id="image">  
   </div> 
+  <div  class="w3-container w3-white">
+    <img src="english_1.jpg" style="width:100%" id="image">  
+  </div> 
+  <div  class="w3-container w3-white">
+    <img src="english_2.jpg" style="width:100%" id="image">  
+  </div> 
+  <div  class="w3-container w3-white">
+    <img src="english_3.jpg" style="width:100%" id="image">  
+  </div> 
+  <div  class="w3-container w3-white">
+    <img src="english_4.jpg" style="width:100%" id="image">  
+  </div> 
+  <div  class="w3-container w3-white">
+    <img src="english_5.jpg" style="width:100%" id="image">  
+  </div> 
+  <div  class="w3-container w3-white">
+    <img src="english_6.jpg" style="width:100%" id="image">  
+  </div> 
+  
 </body>
 </html>
 
 <script>
+  const english = ["english_0.jpg", "english_1.jpg", "english_2.jpg", "english_3.jpg", "english_4.jpg", "english_5.jpg", "english_6.jpg"];
   const myButton = document.getElementById("english");
   myButton.addEventListener("click", toEnglish() {
-    var img = document.getElementById("image");
+    var imgs = document.getElementById("image");
+    for (ext in english){
+      for(img in imgs){
+        img.src=ext;
+      }
+    }
     img.src = "english.pdf";
   }
   );
