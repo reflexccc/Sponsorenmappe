@@ -1,57 +1,200 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sponsorenmappe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+    nav button {
+      background: #666;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    section {
+      max-width: 90%;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #555;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-top: 1rem;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
 <body>
-  <!--
-  <nav class="w3-bar w3-white w3-card-4 w3-large">
-    <a href="#english" class="w3-button w3-bar-item w3-hover-border-black w3-border-black" style="width:50%" id="english">english</a>
-    <a href="#german" class="w3-button w3-bar-item w3-hover-border-black" style="width:50%" id="german">german</a>
+
+  <header>
+    <h1>Sponsorenmappe</h1>
+  </header>
+
+  <nav>
+    <button onclick="showVersion('version1')">Version 1</button>
+    <button onclick="showVersion('version2')">Version 2</button>
   </nav>
-  -->
-  <div  class="w3-container w3-white">
-    <img src="https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_0.jpg" style="width:95%" id="image">  
-  </div> 
-  <div  class="w3-container w3-white">
-    <img src="https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_1.jpg" style="width:95%" id="image">  
-  </div> 
-  <div  class="w3-container w3-white">
-    <img src="https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_2.jpg" style="width:95%" id="image">  
-  </div> 
-  <div  class="w3-container w3-white">
-    <img src="https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_3.jpg" style="width:95%" id="image">  
-  </div> 
-  <div  class="w3-container w3-white">
-    <img src="https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_4.jpg" style="width:95%" id="image">  
-  </div> 
-  <div  class="w3-container w3-white">
-    <img src="https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_5.jpg" style="width:95%" id="image">  
-  </div> 
-  <div  class="w3-container w3-white">
-    <img src="https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_6.jpg" style="width:95%" id="image">  
-  </div> 
-  
+
+  <!-- Version 1 -->
+  <div id="version1" class="content">
+    <section>
+      <img src="start.jpg"
+    </section>
+
+    <section>
+      <h2>About Me</h2>
+      <p>I'm Vinzenz Krüger, 15 years old, and passionate downhill racer. I've pretty much grown up riding bikes. Just 2 years ago I discovered racing and have been loving that aspect of biking ever since. I've also already 
+been able to gather quite a few  trophies.
+
+When I'm not riding, I work as martial arts trainer to finance parts of my racing.
+</p>
+      <img src="Bild_0.jpg">
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <p>2025 (U17 Pro)
+IXS Downhill Cup:
+2. Round: Winterberg – 2. Place
+
+Propain Rookies Cup:
+Round: Winterberg – 5. Place 
+
+2024 (U17)
+Propain Rookies Cup:
+Overall U17 - 2. Place 
+
+2. Round: Oberhof - 1. Place 
+3. Round: Saalbach - 3. Place 
+4. Round: Schladming -  6. Place 
+
+International Rookies Championship: 
+40. Place (3. German)
+
+Others:
+Off-Season Race Blackmountain - 3. Place 
+
+2023 (U15)
+Enduro Treuchtlingen U15 - 1. Place </p>
+      <img src="Bild_1.jpg" width=50%>
+    </section>
+
+    <section>
+      <h2>Goals for 2025</h2>
+      <p>- Top 5 overall in the IXS Downhill Cup</p>
+      <p>- Taking part in 2 European Downhill Cups</p>
+      <p>- Growing my social media</p>
+      <img src="Bild_2.jpg" width=50%>
+    </section>
+
+    <section>
+      <h2>How Do I Reach My Goals?</h2>
+      <p>- Getting a Downhill-Bike</p>
+      <p>- Race oriented DH sessions</p>
+      <p>- Specific endurance- and powertraining</p>
+      <p>- Riding a lot and having fun!!!</p>
+      <img src="Bild_3.jpg" width=50%>
+    </section>
+
+    <section>
+      <h2>What Can I Offer?</h2>
+      <p>- Presence in the german DH-scene</p>
+      <p>- Advertisement through…</p>
+      <p>   …my race-kits</p>
+      <p>   …good results at IXS und EDC races</p>
+      <p>   …social media</p>
+      <p>   …photos and videos for you to use</p>
+      <img src="Bild_.jpg">
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="vinzenzkrueger@gmx.de">vinzenzkrueger@gmx.de</a></p>
+      <p>Instagram: <a href="https://instagram.com/vinzenz_kruger">@vinzenz_kruger</a></p>
+    </section>
+  </div>
+
+  <!-- Version 2 (identisch, kann später angepasst werden) -->
+  <div id="version2" class="content hidden">
+    <section>
+      <img src="start.jpg">
+    </section>
+
+    <section>
+      <h2>Über mich</h2>
+      <p>Ich bin Vinzenz Krüger, 15 jahre alt, und ambitionierter Downhill-Rennfahrer. 
+          Ich bin quasi auf dem Bike aufgewachsen und habe vor zwei Jahren Downhill-Rennen entdeckt. 
+          Seitdem fahre ich regelmäßig Rennen und konnte schon einige Trophäen ergattern. 
+          Wenn ich nicht auf dem Bike sitze, engagiere ich mich als Kampfsport-Trainer, um mir meine Lifttickets zu verdienen.</p>
+      <img src="Bild_0.jpg" width=50%>
+    </section>
+
+    <section>
+      <h2>Erfolge</h2>
+      <p>Deine bisherigen Erfolge (Version 2).</p>
+      <img src="Bild_1.jpg" width=50%>
+    </section>
+
+    <section>
+      <h2>Ziele für 2025</h2>
+      <p>Deine Ziele für 2025 (Version 2).</p>
+      <img src="Bild_2.jpg" width=50%>
+    </section>
+
+    <section>
+      <h2>Wie erreiche ich meine Ziele?</h2>
+      <p>Wie du deine Ziele erreichen willst (Version 2).</p>
+      <img src="Bild_3.jpg" width=25%>
+    </section>
+
+    <section>
+      <h2>Was habe ich zu bieten?</h2>
+      <p>Was du Sponsoren bieten kannst (Version 2).</p>
+      <img src="Bild_.jpg" width=50%>
+    </section>
+
+    <section>
+      <h2>Kontakt</h2>
+      <p>Email: <a href="vinzenzkrueger@gmx.de">vinzenzkrueger@gmx.de</a></p>
+      <p>Instagram: <a href="https://instagram.com/vinzenz_kruger">@vinzenz_kruger</a></p>
+    </section>
+  </div>
+
+  <script>
+    function showVersion(id) {
+      document.getElementById('version1').classList.add('hidden');
+      document.getElementById('version2').classList.add('hidden');
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
-<!--
-<script>
-  const english = ["https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_0.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_1.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_2.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_3.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_4.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_5.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/english_6.jpg"];
-  const myButton1 = document.getElementById("english");
-  myButton1.addEventListener("click", toEnglish() {
-    var imgs = document.getElementById("image");
-    english.forEach((link, index) => {
-      imgs[index].src=link;
-    }
-  });
-  
-  const deutsch = ["https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/deutsch_0.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/deutsch_1.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/deutsch_2.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/deutsch_3.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/deutsch_4.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/deutsch_5.jpg", "https://raw.githubusercontent.com/reflexccc/Sponsorenmappe/refs/heads/main/deutsch_6.jpg"];
-  const myButton2 = document.getElementById("german");
-  myButton2.addEventListener("click", toGerman(){
-    imgs = document.getElementById("image");
-    deutsch.forEach((link, index) => {
-      imgs[index].src=link;
-    }
-  });
-</script>
--->
