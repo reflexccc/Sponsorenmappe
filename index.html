@@ -5,57 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vinzenz Krüger</title>
   <style>
+    :root{
+      --bg-dark: hsl(0 0% 0%);
+      --bg: hsl(0 0% 10%);
+      --bg-light: hsl(0 0% 20%);
+      --text: hsl(0 0% 95%);
+      --text-muted: hsl(0 0% 75%);
+      --link: hsl(232, 44%, 50%);
+      --border: hsl(0 0% 50%);
+      --shadow: 1px 1px 3px hsla(0, 0%, 60%, 0.93), 3px 3px 3px hsla(0, 0%, 50%, 0.85);
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #222;
-      color: #333;
+      background: var(--bg-dark);
+      color: var(--text-muted);
       float: left;
     }
     header {
-      background: #222;
-      color: white;
+      background: var(--bg-dark);
+      color: var(--text);
       padding: 1rem;
       text-align: center;
     }
     nav {
-      background: #444;
-      color: white;
+      background: var(--bg);
+      color: var(--text);
       display: flex;
       justify-content: center;
       gap: 1rem;
       padding: 0.5rem;
     }
-    nav button {
-      background: #666;
-      color: white;
-      border: none;
+    button {
+      background: var(--bg);
+      color: var(--text);
       padding: 0.5rem 1rem;
       cursor: pointer;
       border-radius: 8px;
+      border: solid 1px var(--border);
     }
     section {
-      max-width: 75%;
+      max-width: 80%;
       margin: 2rem auto;
       padding: 1rem;
-      background: white;
+      background: var(--bg);
       border-radius: 8px;
+      border: solid 1px var(--border);
 
       align-items: center;
       display: flex;
       justify-content: center;
     }
+    a {
+      color: var(--link);
+    }
+
     h2 {
-      color: #555;
+      color: var(--text);
       font-size: 32px;
     }
     h3 {
-      color: #555;
+      color: var(--text);
       font-size: 26px;
       padding: 0;
     }
     h4 {
-      color: #1d1d1d;
+      color: var(--text);
       font-size: 22px;
     }
     img {
@@ -63,6 +79,7 @@
       object-fit: cover;
       margin: auto;
       border-radius: 4px;
+      box-shadow: var(--shadow);
     }
     .hidden {
       display: none;
@@ -81,6 +98,7 @@
       max-width: 45%;
       font-size: 19px;
       margin: 0px;
+      color: var(--text-muted);
     }
   </style>
 </head>
@@ -196,11 +214,11 @@
 
     <section>
       <div class="text">
-        <h2>Riding for</h2>
+          <h2>Riding for</h2>
+          <p>Commencal Co-Factory</p>
+          <p><a href="https://mtb-club-muenchen.de/sportbereiche/gravity/mcm-gravity-racing-team/">MCM Gravity</a></p>
       </div>
-          <img src="cofactory.jpg" width="35%">
-          <img src="mcmgravity.png" width="20%">
-      </section>
+    </section>
   </div>
 
   <!-- Version 2 (identisch, kann später angepasst werden) -->
@@ -303,11 +321,11 @@
 
     <section>
       <div class="text">
-        <h2>Unterstützt von</h2>
+          <h2>Riding for</h2>
+          <p>Commencal Co-Factory</p>
+          <p><a href="https://mtb-club-muenchen.de/sportbereiche/gravity/mcm-gravity-racing-team/">MCM Gravity</a></p>
       </div>
-          <img src="cofactory.jpg" width="35%">
-          <img src="mcmgravity.png" width="20%">
-      </section>
+    </section>
   </div>
 
   <script>
